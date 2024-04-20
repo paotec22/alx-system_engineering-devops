@@ -1,0 +1,23 @@
+*Title: What Happens When You Type https://www.google.com in Your Browser*
+
+Have you ever wondered what happens behind the scenes when you type "https://www.google.com" into your browser's address bar and hit Enter? In this blog post, we'll take a deep dive into the intricate journey your request takes before Google's search page magically appears on your screen.
+
+1. **DNS Request**: The journey begins with a Domain Name System (DNS) request. Your browser sends a request to a DNS server to translate the human-readable domain name "www.google.com" into its corresponding IP address, which is essential for establishing a connection with the server hosting Google's website.
+
+2. **TCP/IP**: Once the DNS server returns the IP address of Google's server, your browser initiates a Transmission Control Protocol (TCP) connection with that server. TCP ensures reliable and ordered delivery of data packets over the Internet. Internet Protocol (IP) handles routing and addressing to ensure that data packets reach their destination.
+
+3. **Firewall**: Your request passes through various network devices, including firewalls, which act as barriers to unauthorized access and monitor incoming and outgoing traffic. The firewall inspects the request to ensure it meets security policies before allowing it to proceed further.
+
+4. **HTTPS/SSL**: In the case of Google, your browser establishes a secure Hypertext Transfer Protocol Secure (HTTPS) connection using Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols. This encryption ensures that your communication with Google's server is encrypted, protecting it from eavesdropping and tampering by malicious actors.
+
+5. **Load-Balancer**: Google's infrastructure likely employs load balancers to distribute incoming traffic across multiple servers to optimize performance and ensure high availability. The load balancer intelligently routes your request to an available server capable of handling it efficiently.
+
+6. **Web Server**: Upon reaching Google's web server, your request is processed by software like Apache or Nginx, which hosts and serves web pages. The web server retrieves the requested content, such as Google's search page HTML, from storage and prepares it for transmission back to your browser.
+
+7. **Application Server**: For dynamic content or complex processing, the web server may communicate with an application server. In Google's case, sophisticated algorithms and services handle search queries and generate personalized results. The application server processes your request, executes the necessary logic, and retrieves relevant data from databases or other sources.
+
+8. **Database**: Google's vast array of databases stores and retrieves information crucial for search functionality, including indexed web pages, user preferences, and historical data. The application server interacts with these databases to fetch relevant search results and other dynamic content tailored to your query.
+
+After traversing this complex network of systems and servers, the requested content finally makes its way back to your browser, where it is rendered into the familiar Google search page you see on your screen. The entire process happens in a matter of milliseconds, thanks to the seamless integration of various technologies working together behind the scenes to deliver a seamless browsing experience.
+
+In conclusion, typing "https://www.google.com" into your browser initiates a fascinating journey through the interconnected infrastructure of the Internet, involving DNS resolution, TCP/IP communication, security protocols, load balancing, web servers, application servers, and databases. Understanding this process sheds light on the remarkable complexity and sophistication underlying the seemingly simple act of browsing the web.
